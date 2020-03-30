@@ -50,7 +50,7 @@ if(color === red){
 } */
 
 //kristy and bao bao
-let kristyIntolerant= false;
+/* let kristyIntolerant= false;
 let baoBaoIntolerant= false;
 
 if (kristyIntolerant === true && baoBaoIntolerant === true){
@@ -59,4 +59,82 @@ if (kristyIntolerant === true && baoBaoIntolerant === true){
     console.log("both milks");
 } else {
     console.log("regular milk");
+} */
+
+/* function test(){
+    console.log("I'm a function");
 }
+test(); */
+
+/* const add = function(x,y){
+    return x + y; //return ends the function
+};
+
+console.log(add(100,20));
+
+const name = "Richard"; //cannot redefine const */
+
+/* const hello = function(){
+    console.log("Hello");
+};
+
+const bye = function(){
+    console.log("Bye");
+};
+
+const hiBye = function(){
+    hello();
+    bye();
+    hello();
+    bye();
+};
+
+hiBye(); */
+
+/* const name = "Thurushi"; //global variable or global space
+
+function displayName() {
+    const name = "Kelly"; //local or function scope
+    alert(name);
+    function sun(){
+        const name2 = "Jacob"; //outer function doesn't have access to inner function, can't call in outer function
+        console.log(name); //inner function has access to outer function
+    }
+    return sun();
+}
+displayName(); */
+
+//closure
+/* function displayName() {
+    const name = "Kelly"; //local or function scope
+
+    function sun(){
+        console.log(name); //inner function has access to outer function
+    }
+    return sun;
+}
+const myFunc = displayName();
+myFunc(); */
+
+//Arrays
+/* const names = ["Aarthi", "Vicky", "Vincent", "Doyle", "Kelly"];
+//names.push("Karen");
+names.forEach(name => console.log(name)); */
+
+//spread operator
+/* const numbers = [1,2,3,4,5,6];
+const add = function(x,y,z,a,b,c){
+    return x+y+z+a+b+c;
+}
+console.log(add(...numbers)); */
+
+let students = ["Riya", "Omor", "Alan", "Jiayu", "Michael", "Lisa", "Richard"];
+//"filter" out all students whose names contain <5 characters
+/* const newArr = students
+    .push()
+    .forEach()
+    .map(); */
+
+// "includes" junshen
+
+//Alan or Savva included in "some"-->true or false
