@@ -1,4 +1,4 @@
-/* let string = "I am a string";
+/* \let string = "I am a string";
 let sentence = "Hello Angel " + "and Vicky";
 let combine = "string + sentence"; */
 
@@ -41,17 +41,17 @@ if(age <18){
 //red,green,yellow light
 /* let color="red";
 
-if(color === red){
+if(color === "red"){
     console.log("stop");
-} else if(color === green){
+} else if(color === "green"){
     console.log("go");
-} else(color === yellow){
+} else{
     console.log("wait");
-} */
+}  */
 
 //kristy and bao bao
-/* let kristyIntolerant= false;
-let baoBaoIntolerant= false;
+/* let kristyIntolerant= true;
+let baoBaoIntolerant= true;
 
 if (kristyIntolerant === true && baoBaoIntolerant === true){
     console.log("almond milk");
@@ -60,6 +60,18 @@ if (kristyIntolerant === true && baoBaoIntolerant === true){
 } else {
     console.log("regular milk");
 } */
+
+/* let temp=70;
+if (temp < 68){
+    console.log("cold");
+} else if (temp >= 68 && temp<= 72){
+    console.log("perfect");
+} else if (temp > 72 && temp <= 76){
+    console.log("warm");
+} else {
+    console.log("hot");
+} */
+//////////////////////////////////////////////////////////////////
 
 /* function test(){
     console.log("I'm a function");
@@ -129,12 +141,13 @@ const add = function(x,y,z,a,b,c){
 console.log(add(...numbers)); */
 
 let students = ["Riya", "Omor", "Alan", "Jiayu", "Michael", "Lisa", "Richard"];
+
 //"filter" out all students whose names contain <5 characters
-/* const newArr = students
-    .push()
-    .forEach()
-    .map(); */
+const newStudents = students.filter(student => student.length<5);
+console.log(newStudents);
 
 // "includes" junshen
+console.log(students.includes("Junshen"));
 
 //Alan or Savva included in "some"-->true or false
+console.log(students.some(student => student === "Alan" || student === "Savva"));
